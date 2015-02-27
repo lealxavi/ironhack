@@ -9,10 +9,26 @@
       margin : 0px;
       color  : 0px;
       font-family: 'Verdana';
+      text-rendering: geometricPrecision;
+    }
+
+    section {
+      min-height : 500px;
+    }
+
+    article {
+      color : white;
+      text-align : center;
     }
 
     #slide-one {
       background-image: url("img/section-top.jpg");
+    }
+
+    #slide-one .top-logo {
+      margin-top: 60px;
+      margin-bottom: 20px;
+      width : 100px;
     }
 
     #slide-one h1 {
@@ -22,21 +38,35 @@
       font-weight: 200;
     }
 
-    #slide-one .top-logo {
-      margin-top: 60px;
-      width : 100px;
+    #slide-one ul {
+      margin-top: 40px;
     }
 
-    section {
-      min-height : 500px;
-
+    #slide-one li {
+      display: inline-block;
+      width: 320px;
+      border-top: 1px solid #888;
+      vertical-align: top;
+      text-align: left;
+      color: #ddd;
+      padding-top: 20px;
+      line-height: 1.5em;
     }
 
-    article {
-      color : white;
-      text-align : center;
+    #slide-one li:first-child {
+      margin-right: 40px;
     }
 
+    #slide-one li:last-child {
+      margin-left : 40px;
+    }
+
+    #slide-one li span {
+      display:block;
+      font-size: 18px;
+      color: #FFF;
+      margin-bottom: 12px;
+    }
 
   </style>
 </head>
@@ -46,6 +76,11 @@
       <img class="top-logo" src="img/logo-ironhack.png" alt="Logo Ironhack">
       <h1>Cursos intensivos de programación</h1>
       <h1>para desarrolladores y emprendedores</h1>
+      <ul>
+        <li><span>Aprende a aprender</span> Aprende a resolver problemas como un buen programador para que el aprendizaje no acabe con el curso</li>
+        <li><span>Código, código y más código</span>Remángate, trabaja en proyectos reales y preséntalos en el Demo Day</li>
+        <li><span>Buenas prácticas de desarrollo</span>Enfoque en principios de código limpio, patrones de diseño y desarrollo por medio de pruebas (TDD)</li>
+      </ul>
     </article>
   </section>
 </body>
