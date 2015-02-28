@@ -1,0 +1,130 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+body, button {
+  margin : 0px;
+  padding  : 0px;
+  font-family: 'Verdana';
+  text-rendering: geometricPrecision;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  min-height : 500px;
+}
+
+article {
+  position: absolute;
+  width: 1110px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+}
+
+/* SLIDE ONE */
+
+#slide-one {
+  background-image: url("../img/section-top.jpg");
+  color: #FFF;
+}
+
+#slide-one img.top-logo  {
+  margin:60px auto 20px;
+  width : 100px;
+  display : block;
+
+}
+
+#slide-one h1 {
+  font-size: 24px;
+  width: 750px;
+  margin: 0px auto;
+  font-weight: 200;
+  text-align : center;
+}
+
+#slide-one ul {
+  margin-top: 40px;
+}
+
+#slide-one li {
+  display: inline-block;
+  width: 320px;
+  border-top: 1px solid #888;
+  vertical-align: top;
+  text-align: left;
+  color: #ddd;
+  padding-top: 20px;
+  line-height: 1.5em;
+}
+
+#slide-one li:first-child {
+  margin-right: 40px;
+}
+
+#slide-one li:last-child {
+  margin-left : 40px;
+}
+
+#slide-one li span {
+  display:block;
+  font-size: 18px;
+  color: #FFF;
+  margin-bottom: 12px;
+}
+
+/* SLIDE TWO */
+
+#slide-two h1 {
+  font-size: 30px;
+  margin: 50px 0px;
+  color: #555;
+}
+
+#slide-two li {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+#slide-two li:first-child span.second-column {
+  color:#ddd;
+}
+
+#slide-two li:first-child span.first-column {
+  font-size:26px;
+  color: #666;
+  font-weight: normal;
+}
+
+#slide-two .first-column, #slide-two .second-column {
+  width:40%;
+  display: inline-block;
+}
+
+#slide-two span.first-column {
+  color:#257AB9;
+  font-weight: bold;
+  font-size:18px;
+}
+
+#slide-two span.second-column {
+  color:#888;
+}
+
+#slide-two span.third-column {
+  text-align: right;
+}
+
+#slide-two span.third-column button {
+  width : 170px;
+  height : 40px;
+  background-color:#EEEEEE;
+  border : 0px ;
+  color: #0078BD;
+  font-size:16px;
+  border-radius: 4px;
+}
+

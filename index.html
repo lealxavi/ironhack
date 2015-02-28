@@ -3,89 +3,10 @@
 <head>
   <title>Ironhack</title>
   <meta charset="utf8">
-  <style>
-
-    /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
-    html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
-
-    body {
-      margin : 0px;
-      padding  : 0px;
-      font-family: 'Verdana';
-      text-rendering: geometricPrecision;
-    }
-
-    section {
-      min-height : 500px;
-    }
-
-    article {
-      position: absolute;
-      width: 1110px;
-      left: 0px;
-      right: 0px;
-      margin: 0 auto;
-    }
-
-    #slide-one {
-      background-image: url("img/section-top.jpg");
-      color: #FFF;
-    }
-
-    #slide-one img.top-logo  {
-      margin:60px auto 20px;
-      width : 100px;
-      display : block;
-
-    }
-
-    #slide-one h1 {
-      font-size: 24px;
-      width: 750px;
-      margin: 0px auto;
-      font-weight: 200;
-      text-align : center;
-    }
-
-    #slide-one ul {
-      margin-top: 40px;
-    }
-
-    #slide-one li {
-      display: inline-block;
-      width: 320px;
-      border-top: 1px solid #888;
-      vertical-align: top;
-      text-align: left;
-      color: #ddd;
-      padding-top: 20px;
-      line-height: 1.5em;
-    }
-
-    #slide-one li:first-child {
-      margin-right: 40px;
-    }
-
-    #slide-one li:last-child {
-      margin-left : 40px;
-    }
-
-    #slide-one li span {
-      display:block;
-      font-size: 18px;
-      color: #FFF;
-      margin-bottom: 12px;
-    }
-
-    #slide-two h1 {
-      font-size: 30px;
-      margin: 50px 0px;
-      color: #555;
-    }
-
-  </style>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+  <!-- SLIDE ONE -->
   <section id="slide-one">
     <article>
       <img class="top-logo" src="img/logo-ironhack.png" alt="Logo Ironhack">
@@ -98,9 +19,34 @@
       </ul>
     </article>
   </section>
+  <!-- SLIDE TWO -->
   <section id="slide-two">
     <article>
       <h1>Nuestros próximos cursos intensivos</h1>
+      <ul>
+        <li>
+          <span class="first-column">Barcelona</span>
+          <span class="second-column">Fechas</span>
+        </li>
+        <li>
+          <span class="first-column">Curso Intensivo de Aplicaciones iOS</span>
+          <span class="second-column">04 May - 26 Jun 2015</span>
+          <span class="third-column">
+            <a href="#">
+              <button>Más información</button>
+            </a>
+          </span>
+        </li>
+        <li>
+          <span class="first-column">Curso Intensivo de Aplicaciones iOS</span>
+          <span class="second-column">04 May - 26 Jun 2015</span>
+          <span class="third-column">
+            <a href="#">
+              <button>Más información</button>
+            </a>
+          </span>
+        </li>
+      </ul>
     </article>
   </section>
 </body>
