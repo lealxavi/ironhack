@@ -1,11 +1,25 @@
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
+@font-face {
+  font-family: 'proxima-nova-regular';
+  src : url('../font/proxima-nova-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima-nova-bold';
+  src : url('../font/proxima-nova-bold.ttf') format('truetype');
+}
+
 body, button {
   margin : 0px;
   padding  : 0px;
-  font-family: 'Verdana';
+  font-family: 'proxima-nova-regular';
+
   text-rendering: geometricPrecision;
+  -webkit-backface-visibility: hidden;
 }
 
 button {
@@ -16,7 +30,7 @@ a {
   text-decoration: none;
 }
 section {
-  min-height : 500px;
+  min-height : 560px;
 }
 
 article {
@@ -35,14 +49,14 @@ article {
 }
 
 #slide-one img.top-logo  {
-  margin:60px auto 20px;
-  width : 100px;
+  margin:30px auto 20px;
+  width : 150px;
   display : block;
 
 }
 
 #slide-one h1 {
-  font-size: 24px;
+  font-size: 32px;
   width: 750px;
   margin: 0px auto;
   font-weight: 200;
@@ -62,6 +76,7 @@ article {
   color: #ddd;
   padding-top: 20px;
   line-height: 1.5em;
+  font-size:18px;
 }
 
 #slide-one li:first-child {
@@ -73,10 +88,38 @@ article {
 }
 
 #slide-one li span {
+  font-family: 'proxima-nova-bold';
   display:block;
   font-size: 18px;
   color: #FFF;
   margin-bottom: 12px;
+}
+
+#slide-one div#go-down-button {
+  background-image: url('../img/go-down-button-image.png');
+  background-size: 100%;
+  width : 70px;
+  height: 75px;
+  left : 0px;
+  right : 0px;
+  margin : 0 auto;
+  transition : all 0.5s;
+  position: absolute;
+}
+
+#slide-one div#go-down-button:hover {
+  transform: rotateZ(180deg);
+}
+
+#slide-one div#go-down-symbol {
+  background-image : url('../img/go-down-symbol.png');
+  background-size : 100%;
+  position: absolute;
+  left : 0px;
+  right : 0px;
+  margin : 30px auto;
+  width : 22px;
+  height : 12px;
 }
 
 /* SLIDE TWO */
@@ -97,7 +140,8 @@ article {
 }
 
 #slide-two li:first-child span.first-column {
-  font-size:26px;
+  font-size:28px;
+  font-family : 'proxima-nova-bold';
   color: #666;
   font-weight: normal;
 }
@@ -109,8 +153,8 @@ article {
 
 #slide-two span.first-column a {
   color:#257AB9;
-  font-weight: bold;
-  font-size:18px;
+  font-size:22px;
+  font-family: 'proxima-nova-bold';
   transition: all 0.3s;
 }
 
