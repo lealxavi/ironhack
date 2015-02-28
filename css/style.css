@@ -96,18 +96,22 @@ article {
 }
 
 #slide-one div#go-down-button {
-  background-image: url('../img/go-down-button-image.png');
-  background-size: 100%;
   width : 70px;
   height: 75px;
   left : 0px;
   right : 0px;
   margin : 0 auto;
-  transition : all 0.5s;
   position: absolute;
+  cursor: pointer;
 }
 
-#slide-one div#go-down-button:hover {
+#slide-one #go-down-button img {
+  width : 70px;
+  height : 75px;
+  transition : all 0.5s;
+}
+
+#slide-one div#go-down-button:hover img {
   transform: rotateZ(180deg);
 }
 
@@ -120,6 +124,7 @@ article {
   margin : 30px auto;
   width : 22px;
   height : 12px;
+  z-index: 99;
 }
 
 /* SLIDE TWO */
