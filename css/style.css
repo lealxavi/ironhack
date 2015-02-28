@@ -12,6 +12,9 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
 section {
   min-height : 500px;
 }
@@ -104,11 +107,17 @@ article {
   display: inline-block;
 }
 
-#slide-two span.first-column {
+#slide-two span.first-column a {
   color:#257AB9;
   font-weight: bold;
   font-size:18px;
+  transition: all 0.3s;
 }
+
+#slide-two span.first-column a:hover {
+  opacity: 0.6;
+}
+
 
 #slide-two span.second-column {
   color:#888;
@@ -126,5 +135,9 @@ article {
   color: #0078BD;
   font-size:16px;
   border-radius: 4px;
+  transition: all 0.3s;
 }
 
+#slide-two span.third-column button:hover {
+  opacity: 0.7;
+}
