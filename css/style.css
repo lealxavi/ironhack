@@ -35,7 +35,7 @@ section {
 
 article {
   position: absolute;
-  width: 1110px;
+  width: 95%;
   left: 0px;
   right: 0px;
   margin: 0 auto;
@@ -45,6 +45,7 @@ article {
 
 #slide-one {
   background-image: url("../img/section-top.jpg");
+  background-size: cover;
   color: #FFF;
 }
 
@@ -69,7 +70,7 @@ article {
 
 #slide-one li {
   display: inline-block;
-  width: 320px;
+  width: 30%;
   border-top: 1px solid #888;
   vertical-align: top;
   text-align: left;
@@ -80,11 +81,11 @@ article {
 }
 
 #slide-one li:first-child {
-  margin-right: 40px;
+  margin-right: 4%;
 }
 
 #slide-one li:last-child {
-  margin-left : 40px;
+  margin-left : 4%;
 }
 
 #slide-one li span {
